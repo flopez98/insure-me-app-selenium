@@ -9,11 +9,11 @@
         dest: /home/ubuntu/app
         version: main
 
-    - name: Change directory to the cloned repo
-      shell: cd /home/ubuntu/app
+    - name: Change directory to the cloned repo & Run Maven clean package
+      shell: cd /home/ubuntu/app && mvn clean package assembly:single
 
-    - name: Run Maven clean install
-      shell: mvn clean package assembly:single
+    #- name: Run Maven clean install
+     # shell: mvn clean package assembly:single
 
     - name: Run the Java jar file
       shell: java -jar /home/ubuntu/app/target/facebook-automation-0.0.1-SNAPSHOT-jar-with-dependencies.jar
