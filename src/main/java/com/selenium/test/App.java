@@ -30,7 +30,7 @@ public class App
         System.out.println( "Script excetuting..." );
         
         //1. Open the browser and get to the URL
-        driver.get("http://localhost:8085/contact.html");
+        driver.get("http://3.84.231.70:8081/contact.html");
         
         //2. Wait for the page to load
         driver.manage().timeouts().implicitlyWait(3, TimeUnit.SECONDS);
