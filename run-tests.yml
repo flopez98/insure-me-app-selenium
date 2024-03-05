@@ -2,7 +2,6 @@
 - name: Clone repo, build, and run jar
   hosts: selenium-test-server
   become: yes
-  become_user: your_username
   tasks:
     - name: Clone the repository
       git:
@@ -14,7 +13,7 @@
       shell: cd /home/ubuntu/insure-me-app-selenium
 
     - name: Run Maven clean install
-      shell: mvn clean install
+      shell: mvn clean package assembly:single
 
     - name: Run the Java jar file
       shell: java -jar /home/ubuntu/insure-me-app-selenium/target/facebook-automation-0.0.1-SNAPSHOT-jar-with-dependencies.jar
