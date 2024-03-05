@@ -10,7 +10,7 @@
         version: main
 
     - name: Change directory to the cloned repo
-      shell: sudo cd /home/ubuntu/app
+      shell: cd /home/ubuntu/app
 
     - name: Run Maven clean install
       shell: mvn clean package assembly:single
