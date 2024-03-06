@@ -38,23 +38,23 @@ public class App
         
         //3. Locate and input name
         driver.findElement(By.id("inputName")).sendKeys("Random");
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         
         //4. Locate and input number
         driver.findElement(By.id("inputNumber")).sendKeys("111-111-1111");
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         
         //5. Locate and input mail
         driver.findElement(By.id("inputMail")).sendKeys("test@test.com");
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         
         //6. Locate and input message
         driver.findElement(By.id("inputMessage")).sendKeys("This is a message");
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         
         //7. Send info
         driver.findElement(By.id("my-button")).click();
-        Thread.sleep(1000);
+        //Thread.sleep(1000);
         
         driver.quit();
         
